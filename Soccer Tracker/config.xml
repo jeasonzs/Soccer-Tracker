@@ -2,14 +2,14 @@
 <opencv_storage>
 
 <!-- Names of video files -->
-<video1> C:\SoccerVid\1.avi </video1>
-<video2> C:\SoccerVid\2.avi </video2>
+<video1> C:\SoccerVid\a1.avi </video1>
+<!-- <video2> C:\SoccerVid\2.avi </video2>
 <video3> C:\SoccerVid\3.avi </video3>
 <video4> C:\SoccerVid\4.avi </video4>
 <video5> C:\SoccerVid\5.avi </video5>
-<video6> C:\SoccerVid\6.avi </video6>
+<video6> C:\SoccerVid\6.avi </video6> -->
 
-<fieldModel> C:\SoccerVid\modelNew2.png </fieldModel>
+<fieldModel> C:\SoccerVid\zs.png </fieldModel>
 
 <!-- 
     camera 1 : real 47 - 81 new 47 - 105

@@ -190,25 +190,25 @@ int main() {
 
 	// Initialize camera + labels
 	Mat cameraView(gui_camPreviewH, gui_camPreviewW, CV_8UC3);
-	putText(cameraView, "Camera 5", Point(0    + 230, 930), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
-	putText(cameraView, "Camera 3", Point(640  + 230, 930), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
+	//putText(cameraView, "Camera 5", Point(0    + 230, 930), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
+	//putText(cameraView, "Camera 3", Point(640  + 230, 930), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
 	putText(cameraView, "Camera 1", Point(1280 + 230, 930), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
 
-	putText(cameraView, "Camera 6", Point(0    + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
-	putText(cameraView, "Camera 4", Point(640  + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
-	putText(cameraView, "Camera 2", Point(1280 + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
+	//putText(cameraView, "Camera 6", Point(0    + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
+	//putText(cameraView, "Camera 4", Point(640  + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
+	//putText(cameraView, "Camera 2", Point(1280 + 230, 170), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0));
 
-	scalePreview = 1.0 / 3; // preview size will be 640 x 360
+	scalePreview = 1.0; // preview size will be 640 x 360
 
 	// Camera Coordinates are not at the extreme corners. Origin is at top left
-	camHandler.addCamera(1, Point(1280, 540), scalePreview, Point3d(87.56, 67.928 + 34.52, 60.69));	// Original: 0, 540		
-	camHandler.addCamera(2, Point(1280, 180), scalePreview, Point3d(87.69, 67.928 - 103.14, 60.62));		// Original: 640, 540
+	camHandler.addCamera(1, Point(0, 0), scalePreview, Point3d(87.56, 67.928 + 34.52, 60.69));	// Original: 0, 540		
+	/*camHandler.addCamera(2, Point(1280, 180), scalePreview, Point3d(87.69, 67.928 - 103.14, 60.62));		// Original: 640, 540
 
 	camHandler.addCamera(3, Point(640, 540), scalePreview, Point3d(53.15, 67.928 + 34.13, 56.51));	// Original: 1280, 540
 	camHandler.addCamera(4, Point(640, 180), scalePreview, Point3d(52.37, 67.928 - 101.78, 57.93));		// Original: 0, 180		
 
 	camHandler.addCamera(5, Point(0, 540), scalePreview, Point3d(27.84, 67.928 + 33.97, 59.50));		// Original: 640, 180
-	camHandler.addCamera(6, Point(0, 180), scalePreview, Point3d(27.84, 67.928 - 102.09, 58.83));			// Original: 1280, 180
+	camHandler.addCamera(6, Point(0, 180), scalePreview, Point3d(27.84, 67.928 - 102.09, 58.83));			// Original: 1280, 180*/
 
 	camHandler.updateFSize();
 	vector<Camera*> allCameras = camHandler.getCameras();
